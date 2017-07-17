@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Text, TextInput } from 'react-native';
-import { Card, CardSection, Button } from './common';
+import { Card, CardSection, Button, Input } from './common';
 
 class LoginForm extends Component {
-  state = { text: '' };
+  state = { text: '', password: '' };
 
   render() {
     return (
@@ -17,7 +17,11 @@ class LoginForm extends Component {
           />
         </CardSection>
         <CardSection>
-
+          <Input
+            label='Password'
+            value={this.state.password}
+            onChangeText={password => this.setState({ password })}
+          />
         </CardSection>
         <CardSection>
           <Button>Log in</Button>
