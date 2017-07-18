@@ -17,7 +17,7 @@ const Input = ({ label, placeholder, value, onChangeText, secureTextEntry }) => 
       />
     </View>
   );
-}
+};
 
 const styles = {
   inputStyle: {
@@ -41,4 +41,4 @@ const styles = {
   }
 };
 
-export { Input }
+export { Input };
