@@ -15,7 +15,7 @@ const Button = ({ onPress, children }) => {
       </Text>
     </TouchableOpacity>
   );
-}
+};
 
 const styles = {
   textStyle: {
